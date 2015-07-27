@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body{
+	font-family:arial;
+	font-size:13px;
+	line-height:1.5em;
+	color:#fff;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#container{
+	width:100%;
+	min-height:500px;
+	/*background:#333;*/
+	overflow:auto;
+	margin:auto;
+	/*-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:#666 solid 2px;*/
+	
+	
+}
+
+#audio-image{
+	position:relative;
+	overflow:hidden;
+	height:220px;
+	text-align:center;
+}
+
+#audio-info{
+	text-align:center;
+}
+
+#audio-info .artist{
+	font-weight:bold;
+}
+
+.cover{
+	width:90%;
+	z-index:1;
+}
+
+input#volume {
+	width:95%;
+	margin-left:2%;
+    -webkit-appearance: none !important;
+    background:#ccc;
+    height:1px;
+	margin-bottom:20px;
+}
+input#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:url(../images/knob.png) no-repeat;
+    height:12px;
+    width:12px;
+}
+
+#buttons{
+	width:225px;
+	display: block;
+    margin: 20px auto;
+	overflow:auto;	
+}
+
+
+button#play{
+	width:70px;
+	height:70px;
+	background:url(../images/play.png) no-repeat;float:left;
+}
+
+button#pause{
+	width:70px;
+	height:70px;
+	background:url(../images/pause.png) no-repeat;float:left;
+}
+
+button#stop{
+	width:70px;
+	height:70px;
+	background:url(../images/stop.png) no-repeat;float:left;
+}
+
+button#prev{
+	width:70px;
+	height:70px;
+	background:url(../images/prev.png) no-repeat;
+	float:left;
+	margin-top:15px;
+}
+
+button#next{
+	width:70px;
+	height:70px;
+	background:url(../images/next.png) no-repeat;
+	float:right;
+	margin-top:15px;
+}
+
+#playlist {
+    list-style-type: none;
+	padding:10px;
+	display: none;
+}
+
+#playlist li {
+    cursor: pointer;
+    margin:5px;
+}
+
+#tracker{
+	position:relative;
+	width:310px;
+	margin:auto;
+}
+
+#playlist li.active {
+    font-weight: bold;
+	padding:3px;
+	background:#666;
+}
+
+#progressBar { 
+   width:80%;
+   margin-left:2%;
+   margin-bottom:20px;
+   margin-top:9px;
+   height:10px;
+   background:url(../images/progress_bg.png) no-repeat;
+   float:left;
+}
+
+#progress {
+   background:url(../images/progress.png) no-repeat;
+   height:15px;
+   display:inline-block;
+}
+
+#duration{
+	position:absolute;
+	top:0;
+	right:10px;
+	padding:4px 8px;
+	background:#000;
+	border-radius:5px;
+}
+.fondo {
+    background: -webkit-linear-gradient(left top, rgb(72, 150, 100) , rgb(53, 53, 134)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* Standard syntax (must be last) */
+	padding: -15px;
+}
+#botones{
+	margin: 0 auto;
+}
+#reprolist{
+	margin: auto;
+	width: 90%;
+}
+#calendario{
+	float: left;
+}
+#fecha{
+	float: right;
+	list-style-type: none;
+	margin-top: 50px;
+}
+#employeeDetails{
+	display: inline-block;
+}

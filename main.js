@@ -7,13 +7,14 @@ $('#pause').hide();
 initAudio($('#playlist li:first-child'));
 	
 function initAudio(element){
+	var mp3 = element.attr('mp3')
 	var song = element.attr('song');
     var title = element.text();
     var cover = element.attr('cover');
     var artist = element.attr('artist');
 
 	//Create a New Audio Object
-	audio = new Audio('http://k007.kiwi6.com/hotlink/o2lp6f8ppy/FARRUKO_Feat._REYKON_-_RAPAPAM_By_Dj_M_at_gic_.mp3');
+	audio = new Audio(mp3);
 	
 	if(!audio.currentTime){
 		$('#duration').html('0.00');

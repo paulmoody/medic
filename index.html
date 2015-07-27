@@ -1,47 +1,54 @@
+<!DOCTYPE HTML>
 <html>
+
 <head>
-<script src="css/source-sans-pro.js"></script>
-<link href="css/styles.css" rel="stylesheet">
+<title>Employee Directory</title>
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link href="css/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/repro.css" media="screen">
+<style type="text/css">
+.ui-toolbar-back-btn{
+	color: white;
+}
+</style>
 </head>
+
 <body>
+ 
+<div id="employeeListPage" data-role="page" data-theme="none" class="fondo">
+	<div data-role="header" style="background-color: rgb(70, 137, 105);height:42px;">
+		<h1>Doc Med</h1>
+	</div>
+	<div data-role="content">
+		
+		<form class="my-form" action="reportlist.html" method="post" data-transition="slide">
+    		<label for="fname" >Nombre:</label>
+			<input type="text" name="fname" id="fname" placeholder="Ingrese su nombre..." data-index="1">
+		     <label for="fdic">Correo:</label>
+            <input type="text" name="fdic" id="fdic" placeholder="Ingrese su correo..." data-index="2">
+			<label for="fdic">Direccion:</label>
+            <input type="text" name="fdic" id="fdic" placeholder="Ingrese su direccion..." data-index="3">
+            <label for="ftel">Telefono:</label>
+            <input type="text" name="ftel" id="ftel" placeholder="Ingrese su telefono..." data-index="4">
+			 <label for="ftel">Fecha de Nacimiento:</label>
+            <input type="text" name="ftel" id="ftel" placeholder="Ingrese su fecha..." data-index="4">
+		    <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="b" class="ui-btn ui-shadow ui-btn-corner-all ui-submit ui-btn-up-b" aria-disabled="false">
+	    	    <span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Orden</span></span>
+	    	    <button type="submit" id="fhome" name="submit" value="submit" data-theme="b" class="ui-btn-hidden" aria-disabled="false" data-index="5">Enviar</button>
+	    </div>
+		</form>
+		
+	</div>
+</div>
 
-<script id="home-tpl" type="text/x-handlebars-template">
-    <div class='header'><h1>Home</h1></div>
-    <div class='search-bar'><input class='search-key' type="search"/></div>
-    <div class="scroll"><ul class='employee-list'></ul></div>
-</script>
 
-<script id="employee-li-tpl" type="text/x-handlebars-template">
-    {{#.}}
-    <li><a href="#employees/{{this.id}}">{{this.firstName}} {{this.lastName}}<br/>{{this.title}}</a></li>
-    {{/.}}
-</script>
-
-<script id="employee-tpl" type="text/x-handlebars-template">
-    <div class='header'><a href='#' class="button header-button header-button-left">Back</a><h1>Details</h1></div>
-    <div class='details'>
-    <img id='image' src='img/{{firstName}}_{{lastName}}.jpg' style="float:left;margin:10px;"/>
-    <h1>{{firstName}} {{lastName}}</h1>
-    <h2>{{title}}</h2>
-    <span class="location"></span>
-    <ul>
-    <li><a href="tel:{{officePhone}}">Call Office<br/>{{officePhone}}</a></li>
-    <li><a href="tel:{{cellPhone}}">Call Cell<br/>{{cellPhone}}</a></li>
-    <li><a href="sms:{{cellPhone}}">SMS<br/>{{cellPhone}}</a></li>
-    <li><a href="#" class="add-location-btn">Add Location</a></li>
-    <li><a href="#" class="add-contact-btn">Add to Contacts</a></li>
-    <li><a href="#" class="change-pic-btn">Change Picture</a></li>
-    </ul>
-    </div>
-</script>
-
-<script src="phonegap.js"></script>
-<script src="lib/jquery-1.8.2.min.js"></script>
-<script src="lib/handlebars.js"></script>
-<script src="js/storage/memory-store.js"></script>
-<script src="js/HomeView.js"></script>
-<script src="js/EmployeeView.js"></script>
-<script src="js/main.js"></script>
+<!--<script src="js/employeelist.js"></script>-->
+<script src="js/employeedetails.js"></script>
+<!--<script src="js/reportlist.js"></script>-->
 
 </body>
+
 </html>
