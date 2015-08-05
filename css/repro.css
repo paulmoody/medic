@@ -155,10 +155,10 @@ button#next{
 	border-radius:5px;
 }
 .fondo {
-    background: -webkit-linear-gradient(left top, rgb(72, 150, 100) , rgb(53, 53, 134)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* Standard syntax (must be last) */
+    background: #E6E6E6; /* For Safari 5.1 to 6.0 */
+    background: #E6E6E6; /* For Opera 11.1 to 12.0 */
+    background: #E6E6E6; /* For Firefox 3.6 to 15 */
+    background: #E6E6E6; /* Standard syntax (must be last) */
 	padding: -15px;
 }
 #botones{
@@ -178,4 +178,7 @@ button#next{
 }
 #employeeDetails{
 	display: inline-block;
+}
+#sombragris{
+	color: gray;
 }

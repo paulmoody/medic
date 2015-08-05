@@ -9,7 +9,7 @@
 
 
 
-	<div data-role="header" data-add-back-btn="true" style="background-color: rgb(70, 137, 105);height:42px">
+	<div data-role="header" data-add-back-btn="true" style="background-color: #4596A9;height:42px">
 		<h1>Cita</h1>
 	</div>
 
@@ -22,7 +22,7 @@
 		 <br>
 	<div id="audio-image">
 		<img id="employeePic" src="images/doc.png"/>
-		<h1 style="padding-top: 20px;">Proxima cita Disponible:</h1>
+		<h1 id="sombragris" style="padding-top: 20px;">Proxima cita Disponible:</h1>
 	</div>
 	<div id="audio-player">
 		<div id="audio-info">
@@ -30,8 +30,8 @@
 				<div id="employeeDetails">
 				   <img id="calendario" src="images/calendar-mini.png">
 				  	<ul id="fecha">
-						<li><h1>Hoy</h1></li>
-						<li style="padding-top: 20px;"><h3 id="fullName"></h3></li>
+						<li><h1 id="sombragris">Hoy</h1></li>
+						<li style="padding-top: 20px;" ><h3 style="color:gray" id="fullName"></h3></li>
 				   		<!--<p id="employeeTitle"></p>
 						<h3 id="fullName"></h3>
 				   		<p id="city"></p>-->
@@ -40,7 +40,7 @@
 		</div>
 		<form class="my-form" action="index.html" method="post" data-transition="slide"> 
 			<div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="b" class="ui-btn ui-shadow ui-btn-corner-all ui-submit ui-btn-up-b" aria-disabled="false">
-					<span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Su Cita</span></span>
+					<span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span></span>
 					<button type="submit" id="fhome" name="submit" value="submit" data-theme="b" class="ui-btn-hidden" aria-disabled="false" data-index="5">Agendar</button>
 			</div>
 		</form>
